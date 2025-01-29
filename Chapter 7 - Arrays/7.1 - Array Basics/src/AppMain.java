@@ -36,10 +36,11 @@ public class AppMain {
     // int[] list = new int[] { 1, 2, 3, 4 };
     // Utils.print(setAllElements(list, 5)); -> { 5, 5, 5, 5 }
     public static int[] setAllElements(int[] list, int toValue) {
-        for (int i = 0; i < list.length; i++) {
-            list[i] = toValue;
+        int[] updatedList = new int[list.length];
+        for (int i = 0; i < updatedList.length; i++) {
+            updatedList[i] = toValue;
         }
-        return list;
+        return updatedList;
     }
 
     // Set the specified element in the provided array to zero.
